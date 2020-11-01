@@ -1,5 +1,9 @@
 <script>
   export let name, commit, status, port, headers;
+
+  function serviceUrl() {
+    return `http://${window.location.hostname}:${port}`;
+  }
 </script>
 
 <style>
@@ -47,11 +51,19 @@
     letter-spacing: 0.1rem;
     margin-bottom: 0.5rem;
   }
+  a {
+    color: rgba(255, 255, 255, 0.6);
+  }
 </style>
 
 <div class="item">
   {#if !headers}
-    <div class="property name">{name}</div>
+    <div class="property name">
+      {name}
+      <a href={serviceUrl()}>
+        <i class="fas fa-external-link-alt" />
+      </a>
+    </div>
     <div class="property commit">{commit}</div>
     <div class="property status {status.toLowerCase()}">{status}</div>
     <div class="property port">{port}</div>
