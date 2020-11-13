@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "node --inspect=5858 -r ts-node/register ./src/index.ts",
-    "dev": "nodemon",
+    "dev": "nodemon --ignore './config' --ignore './.greenlockrc'",
     "build": "tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
@@ -32,7 +32,9 @@
     "@octokit/rest": "18.0.6",
     "simple-git": "2.21.0",
     "js-yaml": "3.14.0",
-    "request": "2.88.2"
+    "request": "2.88.2",
+    "greenlock-express": "4.0.3",
+    "@greenlock/manager": "3.1.0"
   },
   "devDependencies": {
     "@types/compression": "1.7.0",

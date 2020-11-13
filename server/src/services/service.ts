@@ -116,7 +116,7 @@ class ServiceManager {
     });
   }
 }
-ServiceManager.run();
+//ServiceManager.run();
 
 @Service()
 export class ServiceResolver {
