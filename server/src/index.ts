@@ -4,8 +4,8 @@ import { Config, ConfigScanner, Repo } from "./config";
 import { ServiceConfig } from "./services/service";
 import { Proxy } from "./proxy";
 
-// let configuration = Config.load();
-// configuration.scan();
+let configuration = Config.load();
+configuration.scan();
 
 // console.log(ServiceConfig.fromFile("/tmp/flashcards/otto.yml"));
 const { monitoring } = require("otto-lib");
