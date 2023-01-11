@@ -44,7 +44,7 @@
     "@types/js-yaml": "^3.12.5",
     "@types/node": "14.11.10",
     "@types/request": "2.48.5",
-    "class-validator": "0.12.2",
+    "class-validator": "0.14.0",
     "graphql-depth-limit": "1.1.0",
     "graphql-import": "1.0.2",
     "graphql-import-node": "0.0.4",
